@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Create a New Product</h2>
+    <form action="/products" method="POST">
+      <label>Name: <input type="text" name="title" /> </label><br />
+      <label>Description: <input type="text" name="description" /> </label
+      ><br />
+      <label>Price: <input type="text" name="price" /></label>
+      <br />
+      <label
+        >published: <input type="checkbox" name="published" checked /> </label
+      ><br />
+      <label
+        >Category<select name="category">
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+          <option value="Kids">Kids</option>
+        </select></label
+      >
+      <br />
+      <input type="submit" value="Add Product" />
+    </form>
+  </body>
+</html>
